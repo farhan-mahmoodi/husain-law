@@ -1,0 +1,10 @@
+# Old Google Sites addresses -> new pages (permanent redirects)
+/home                 /                       301
+/home/                /                       301
+/contact-us           /contact.html           301
+/contact-us/          /contact.html           301
+/attorney-profile     /attorney.html          301
+/attorney-profile/    /attorney.html          301
+/practice-areas       /practice-areas.html    301
+/attorney             /attorney.html          301
+/contact              /contact.html           301
