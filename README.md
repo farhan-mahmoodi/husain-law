@@ -1,6 +1,6 @@
 # Husain Law LLC — website
 
-A static, dependency-free website for Husain Law LLC, live at https://www.husain.law and hosted on Netlify.
+A static, dependency-free website for Husain Law LLC, live at https://www.husain.law and hosted on GitHub Pages.
 
 - `index.html` — home: statement, numbered sections for the firm, practice areas, the attorney, how the firm works, common questions, and contact
 - `practice-areas.html` — Tax Law & Controversy, Personal Injury, Civil Litigation, Commercial Transactions (anchor links: `#tax`, `#personal-injury`, `#civil-litigation`, `#commercial`)
@@ -9,14 +9,15 @@ A static, dependency-free website for Husain Law LLC, live at https://www.husain
 - `assets/css/styles.css` — all styling; brand colours are the tokens at the top of the file
 - `assets/js/main.js` — menu on small screens, practice-area section navigation, form handling
 - `assets/img/` — logo (keyed from the original artwork), mark, headshot, favicon, social-share image
-- `_redirects` — Netlify redirect rules sending the old Google Sites addresses (`/home`, `/contact-us`, `/attorney-profile`) to the new pages
+- `home.html`, `contact-us.html`, `attorney-profile.html` — stubs that forward the old Google Sites addresses to the new pages
 - `404.html` — the page shown for an address that does not exist
 - `sitemap.xml` and `robots.txt` — for Google Search Console
 
 Brand colours are unchanged from the current site: deep green `#0a332a` / `#072a22` and gold `#c29b57` / `#c5a059`.
 Fonts: EB Garamond (headings and long text) and Libre Franklin (navigation and labels), loaded from Google Fonts.
 
-- `netlify.toml` — Netlify settings (publish directory is the repository root, no build step)
+- `CNAME` — the custom domain for GitHub Pages
+- `.github/workflows/pages.yml` — publishes the site to GitHub Pages on every push to `main`
 
 ## Preview locally
 
@@ -28,13 +29,13 @@ npx serve .
 
 ## Publish
 
-The site is deployed by Netlify from this repository. Every push to the main branch goes live at https://www.husain.law within a minute or two. DNS for the domain is managed at GoDaddy and points at Netlify.
+The site is published by GitHub Pages from this repository. Every push to `main` goes live at https://www.husain.law within a minute or two. DNS for the domain is managed at GoDaddy and points at GitHub Pages (four A records for the root, a CNAME for www).
 
 ## The contact form
 
 The form on `contact.html` has no server behind it. On submit it opens the visitor's email app with a pre-filled message to `daniyal@husain.law`. The page also links to the firm's existing Google consultation form.
 
-To receive submissions directly instead, give the `<form>` an `action` from a form service (Formspree, Basin, Netlify Forms, Cloudflare Pages Functions) and remove the `submit` handler in `assets/js/main.js`.
+To receive submissions directly instead, give the `<form>` an `action` from a form service such as Formspree or Basin and remove the `submit` handler in `assets/js/main.js`.
 
 ## Editing content
 
