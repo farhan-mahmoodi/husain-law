@@ -1,6 +1,6 @@
 # Husain Law LLC — website
 
-A static, dependency-free website for Husain Law LLC, live at https://husain.law and hosted on Netlify.
+A static, dependency-free website for Husain Law LLC, live at https://www.husain.law and hosted on Netlify.
 
 - `index.html` — home: statement, numbered sections for the firm, practice areas, the attorney, how the firm works, common questions, and contact
 - `practice-areas.html` — Tax Law & Controversy, Personal Injury, Civil Litigation, Commercial Transactions (anchor links: `#tax`, `#personal-injury`, `#civil-litigation`, `#commercial`)
@@ -28,7 +28,7 @@ npx serve .
 
 ## Publish
 
-The site is deployed by Netlify from this repository. Every push to the main branch goes live at https://husain.law within a minute or two. DNS for the domain is managed at GoDaddy and points at Netlify.
+The site is deployed by Netlify from this repository. Every push to the main branch goes live at https://www.husain.law within a minute or two. DNS for the domain is managed at GoDaddy and points at Netlify.
 
 ## The contact form
 
